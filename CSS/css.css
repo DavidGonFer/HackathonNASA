@@ -11,18 +11,17 @@ html{
     
 body{
     
-	height: 2160px;
+	height: 5060px;
 }
 #marcador0{
-	background-color: rgb(0, 83, 228);
+	background-color: rgb(7, 123, 255);
 	width: -webkit-fill-avaliable;
-	height: 900px;
+	height: 612px;
 	display: block;
 	top: 0;
 }
 #pantalla1{
 	position:absolute;
-	width:300px;
 	background-color:white;
 	border-radius: 5px;
 	font-family: 'Inconsolata', monospace;
@@ -54,20 +53,24 @@ p{
 	top: 0px;
 	left: 0px;
 	z-index: -1;
-	height: 2000px;
+	height: 1495px;
+	width: -webkit-fill-available;
+	background-color: rgb(0, 70, 232);
 }
+
 #marcador1{
 	position: -webkit-sticky;
   	position: sticky;
-	background-color: rgb(0, 40, 110);
 	z-index: 0;
-	top:50%;
-	left:50%;
-	margin-right: -50%;
-
+	top: 50px;
+	left: 0px;
+	width: 800px;
 	display: block;
+	height: 500px;
+	margin-bottom: 100px;
 }
 #pantalla2{
+	position: relative;
 	
 	width:300px;
 	background-color:white;
@@ -76,8 +79,224 @@ p{
 	font-family: 'Noto Serif', serif;
 	color:rgb(84, 84, 84);
 	text-align:center;
-	width: 800px;
+	width: 100%;
 	height: 500px;
 	z-index: -1; 
+	margin: auto;
+}
+
+
+
+
+
+#limitemarcador2{
+	position: absolute;
+	top: 612px;
+	left: 0px;
+	z-index: -2;
+	height: 1495px;
+	width: -webkit-fill-available;
+	background-color: rgb(0, 58, 194);
+}
+
+#marcador2{
+	position: -webkit-sticky;
+  	position: sticky;
+	z-index: -1;
+	top: 50px;
+	left: 0px;
+	width: 800px;
+	display: block;
+	height: 500px;
+	margin-bottom: 100px;
+}
+#pantalla3{
+	position: relative;
 	
+	width:300px;
+	background-color:white;
+	border-radius: 5px;
+	font-family: 'Inconsolata', monospace;
+	font-family: 'Noto Serif', serif;
+	color:rgb(84, 84, 84);
+	text-align:center;
+	width: 100%;
+	height: 500px;
+	z-index: -2; 
+	margin: auto;
+}
+
+
+
+
+#limitemarcador3{
+	position: absolute;
+	top: 1251px;
+	left: 0px;
+	z-index: -3;
+	height: 1495px;
+	width: -webkit-fill-available;
+	background-color: rgb(0, 51, 171);
+}
+
+#marcador3{
+	position: -webkit-sticky;
+  	position: sticky;
+	z-index: -2;
+	top: 50px;
+	left: 0px;
+	width: 800px;
+	display: block;
+	height: 500px;
+	margin-bottom: 100px;
+}
+
+
+
+
+#pantalla4{
+	position: relative;
+	
+	width:300px;
+	background-color:white;
+	border-radius: 5px;
+	font-family: 'Inconsolata', monospace;
+	font-family: 'Noto Serif', serif;
+	color:rgb(84, 84, 84);
+	text-align:center;
+	width: 100%;
+	height: 500px;
+	z-index: -3; 
+	margin: auto;
+}
+
+
+
+
+#limitemarcador4{
+	position: absolute;
+	top: 1954px;
+	left: 0px;
+	z-index: -4;
+	height: 1495px;
+	width: -webkit-fill-available;
+	background-color: rgb(0, 48, 161);
+}
+
+#marcador4{
+	position: -webkit-sticky;
+  	position: sticky;
+	z-index: -3;
+	top: 50px;
+	left: 0px;
+	width: 800px;
+	display: block;
+	height: 500px;
+	margin-bottom: 100px;
+}
+#pantalla5{
+	position: relative;
+	
+	width:300px;
+	background-color:white;
+	border-radius: 5px;
+	font-family: 'Inconsolata', monospace;
+	font-family: 'Noto Serif', serif;
+	color:rgb(84, 84, 84);
+	text-align:center;
+	width: 100%;
+	height: 500px;
+	z-index: -4; 
+	margin: auto;
+}
+
+#limitemarcador5{
+	position: absolute;
+	top: 2618px;
+	left: 0px;
+	z-index: -5;
+	height: 1495px;
+	width: -webkit-fill-available;
+	background-color: rgb(0,31,104);
+}
+
+#marcador5{
+	position: -webkit-sticky;
+  	position: sticky;
+	z-index: -4;
+	top: 50px;
+	left: 0px;
+	width: 800px;
+	display: block;
+	height: 500px;
+	margin-bottom: 100px;
+}
+#pantalla6{
+	position: relative;
+	
+	width:300px;
+	background-color:white;
+	border-radius: 5px;
+	font-family: 'Inconsolata', monospace;
+	font-family: 'Noto Serif', serif;
+	color:rgb(84, 84, 84);
+	text-align:center;
+	width: 100%;
+	height: 500px;
+	z-index: -5; 
+	margin: auto;
+}
+
+
+
+
+#limitemarcador6{
+	position: absolute;
+	top: 3300px;
+	left: 0px;
+	z-index: -6;
+	height: 1495px;
+	width: -webkit-fill-available;
+	background: rgb(0,0,0);
+background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,44,149,1) 100%);
+}
+
+#marcador6{
+	position: -webkit-sticky;
+  	position: sticky;
+	z-index: -5;
+	top: 50px;
+	left: 0px;
+	width: 800px;
+	display: block;
+	height: 500px;
+	margin-bottom: 100px;
+}
+#pantalla7{
+	position: relative;
+	
+	width:300px;
+	background-color:white;
+	border-radius: 5px;
+	font-family: 'Inconsolata', monospace;
+	font-family: 'Noto Serif', serif;
+	color:rgb(84, 84, 84);
+	text-align:center;
+	width: 100%;
+	height: 500px;
+	z-index: -6; 
+	margin: auto;
+}
+
+
+#limitemarcador7{
+	position: absolute;
+	top: 3910px;
+	left: 0px;
+	z-index: -10;
+	height: 1495px;
+	width: -webkit-fill-available;
+	
+	background: url(./IMG/finalphoto.jpg) repeat 0 0;
+    background-position: center;
 }
