@@ -11,7 +11,7 @@ html{
     
 body{
     
-	height: 5060px;
+	height: 5420px;
 }
 #marcador0{
 	background-color: rgb(7, 123, 255);
@@ -291,12 +291,26 @@ background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,44,149,1) 100%);
 
 #limitemarcador7{
 	position: absolute;
-	top: 3910px;
+	top: 4000px;
 	left: 0px;
 	z-index: -10;
 	height: 1495px;
 	width: -webkit-fill-available;
 	
-	background: url(./IMG/finalphoto.jpg) repeat 0 0;
-    background-position: center;
+	
 }
+#marcador7{
+	position: -webkit-sticky;
+  	position: sticky;
+	z-index: -9;
+	top: 50px;
+	left: 0px;
+	width: 100%;
+	display: block;
+	height: 1495px;
+	margin-bottom: 100px;
+	background: url(../IMG/finalphoto.jpg) repeat 0 0;
+    background-position:top;
+	background-size: contain;
+}
+
