@@ -4,7 +4,7 @@
 }
 
 html{
-
+	scroll-behavior: smooth;
 	margin: 0px;
 	padding: 0px;
 }
@@ -14,7 +14,7 @@ body{
 	height: 5420px;
 }
 #marcador0{
-	background-color: rgb(7, 123, 255);
+	background-color: rgb(0, 204, 255);
 	width: -webkit-fill-avaliable;
 	height: 612px;
 	display: block;
@@ -30,7 +30,7 @@ body{
 	text-align:center;
 	width: 800px;
 	height: 500px; 
-	z-index: 1;
+	z-index: 10;
 	top:50%;
 	left:50%;
 	margin-right: -50%;
@@ -48,20 +48,28 @@ img{
 p{
 	width: 600px;
 }
+button{
+	display: block;
+}
+a{
+	display: block;
+	text-decoration: none;
+	color:rgb(84, 84, 84);
+}
 #limitemarcador1{
 	position: absolute;
 	top: 0px;
 	left: 0px;
-	z-index: -1;
+	z-index: 8;
 	height: 1495px;
 	width: -webkit-fill-available;
-	background-color: rgb(0, 70, 232);
+	background-color: rgb(0, 180, 224);
 }
 
 #marcador1{
 	position: -webkit-sticky;
   	position: sticky;
-	z-index: 0;
+	z-index: 9;
 	top: 50px;
 	left: 0px;
 	width: 800px;
@@ -81,28 +89,52 @@ p{
 	text-align:center;
 	width: 100%;
 	height: 500px;
-	z-index: -1; 
+	z-index: 8; 
 	margin: auto;
 }
 
 
 
 
+	#nextSlide2 {
+		position: absolute;
+		top: 1447px;
+	}
+	#nextSlide3 {
+		position: absolute;
+		top: 2087px;
+	}
+	#nextSlide4 {
+		position: absolute;
+		top: 2720px;
+	}
+	#nextSlide5 {
+		position: absolute;
+		top: 3400px;
+	}
+	#nextSlide6 {
+		position: absolute;
+		top: 4100px;
+	}
+	#nextSlide7 {
+		position: absolute;
+		top: 4800px;
+	}
 
 #limitemarcador2{
 	position: absolute;
 	top: 612px;
 	left: 0px;
-	z-index: -2;
+	z-index: 7;
 	height: 1495px;
 	width: -webkit-fill-available;
-	background-color: rgb(0, 58, 194);
+	background-color: rgb(0, 107, 174);
 }
 
 #marcador2{
 	position: -webkit-sticky;
   	position: sticky;
-	z-index: -1;
+	z-index: 8;
 	top: 50px;
 	left: 0px;
 	width: 800px;
@@ -122,7 +154,7 @@ p{
 	text-align:center;
 	width: 100%;
 	height: 500px;
-	z-index: -2; 
+	z-index: 7; 
 	margin: auto;
 }
 
@@ -133,16 +165,16 @@ p{
 	position: absolute;
 	top: 1251px;
 	left: 0px;
-	z-index: -3;
+	z-index: 6;
 	height: 1495px;
 	width: -webkit-fill-available;
-	background-color: rgb(0, 51, 171);
+	background-color: rgb(0, 81, 131);
 }
 
 #marcador3{
 	position: -webkit-sticky;
   	position: sticky;
-	z-index: -2;
+	z-index: 7;
 	top: 50px;
 	left: 0px;
 	width: 800px;
@@ -166,7 +198,7 @@ p{
 	text-align:center;
 	width: 100%;
 	height: 500px;
-	z-index: -3; 
+	z-index: 6; 
 	margin: auto;
 }
 
@@ -177,16 +209,16 @@ p{
 	position: absolute;
 	top: 1954px;
 	left: 0px;
-	z-index: -4;
+	z-index: 5;
 	height: 1495px;
 	width: -webkit-fill-available;
-	background-color: rgb(0, 48, 161);
+	background-color: rgb(0, 44, 97);
 }
 
 #marcador4{
 	position: -webkit-sticky;
   	position: sticky;
-	z-index: -3;
+	z-index: 6;
 	top: 50px;
 	left: 0px;
 	width: 800px;
@@ -206,7 +238,7 @@ p{
 	text-align:center;
 	width: 100%;
 	height: 500px;
-	z-index: -4; 
+	z-index: 5; 
 	margin: auto;
 }
 
@@ -214,16 +246,16 @@ p{
 	position: absolute;
 	top: 2618px;
 	left: 0px;
-	z-index: -5;
+	z-index: 4;
 	height: 1495px;
 	width: -webkit-fill-available;
-	background-color: rgb(0,31,104);
+	background-color: rgb(0, 19, 59);
 }
 
 #marcador5{
 	position: -webkit-sticky;
   	position: sticky;
-	z-index: -4;
+	z-index: 5;
 	top: 50px;
 	left: 0px;
 	width: 800px;
@@ -243,7 +275,7 @@ p{
 	text-align:center;
 	width: 100%;
 	height: 500px;
-	z-index: -5; 
+	z-index: 4; 
 	margin: auto;
 }
 
@@ -254,7 +286,7 @@ p{
 	position: absolute;
 	top: 3300px;
 	left: 0px;
-	z-index: -6;
+	z-index: 3;
 	height: 1495px;
 	width: -webkit-fill-available;
 	background: rgb(0,0,0);
@@ -264,7 +296,7 @@ background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,44,149,1) 100%);
 #marcador6{
 	position: -webkit-sticky;
   	position: sticky;
-	z-index: -5;
+	z-index: 4;
 	top: 50px;
 	left: 0px;
 	width: 800px;
@@ -284,7 +316,7 @@ background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,44,149,1) 100%);
 	text-align:center;
 	width: 100%;
 	height: 500px;
-	z-index: -6; 
+	z-index: 3; 
 	margin: auto;
 }
 
@@ -293,7 +325,7 @@ background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,44,149,1) 100%);
 	position: absolute;
 	top: 4000px;
 	left: 0px;
-	z-index: -10;
+	z-index: 1;
 	height: 1495px;
 	width: -webkit-fill-available;
 	
@@ -302,7 +334,7 @@ background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,44,149,1) 100%);
 #marcador7{
 	position: -webkit-sticky;
   	position: sticky;
-	z-index: -9;
+	z-index: 0;
 	top: 50px;
 	left: 0px;
 	width: 100%;
@@ -310,7 +342,25 @@ background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,44,149,1) 100%);
 	height: 1495px;
 	margin-bottom: 100px;
 	background: url(../IMG/finalphoto.jpg) repeat 0 0;
-    background-position:top;
+    background-position:bottom;
 	background-size: contain;
+	background-repeat: no-repeat;
 }
 
+#jugar{
+	background-color: rgba(103, 103, 103, 0.432);
+	position: absolute;
+	color: aliceblue;
+	text-decoration: none;
+	height: 40px;
+	width: 100px;
+	top: 1250px;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%,0);
+	z-index: 1;
+}
+#jugar a:visited{
+	color: aliceblue;
+	text-decoration: none;
+}
