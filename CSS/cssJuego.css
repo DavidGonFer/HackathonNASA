@@ -57,7 +57,7 @@ nav ul li{
 	float:left;
 	margin:5px auto;
 	text-align: center;
-	line-height: 100px;
+	line-height: 90px;
     border-radius: 5px;
     display:block;
 }
@@ -68,11 +68,26 @@ nav ul li:hover{
 	border-top:white 5px solid;
 	border-bottom:white 5px solid;
 }
+div nav ul li:hover{
+	display:block;
+	background-color:lightblue;
+	color:white;
+	border-top:white 5px solid;
+	border-bottom:white 5px solid;
+    font-size: larger;
+}
 nav ul li:hover a{
 	display:block;
 	color:white;
 }
 
+div img{
+    position:absolute;
+    top:5%;
+    left:5%;
+    width:90%;
+    height: 90%;
+}
 div a{
     display: block;
     text-decoration: none;
