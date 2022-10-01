@@ -146,6 +146,7 @@ p{
     text-align: center;
     line-height: 40px;
     display: block;
+    /*visibility: hidden;*/
 }
 
 #next:hover{
@@ -193,7 +194,7 @@ div#resultado{
 div#restart{
     position: absolute;
     color:lightblue;
-    background-image: url("../IMAGENES/fondo.jpg");
+    background-image: url("../IMG/fondo.jpg");
     top:90%;
     left: 30%;
     width:500px;
