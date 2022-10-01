@@ -1,16 +1,42 @@
 *{
-	list-style-type: none;
-	margin:0;
-	padding:0;
-	text-decoration:none;
+    margin: auto;
+    padding: auto;
+    list-style-type: none;
+    text-decoration:none;
 }
-nav ul li a{
+
+html{
+    width:100%;
+    height:100%;
+	margin: 0px;
+	padding: 0px;
+}
+    
+body{
+    width:100%;
+    height:100%;
+    background:rgb(25, 58, 168);
+    overflow-y:hidden;
+	height: 2160px;
+}
+header{
+	color:yellow;
+	text-align: center;
+	line-height: 50px;
+	
+}
+div nav{
+	position:absolute;
+	top:90%;
+	left:24%;
+}
+div nav ul li a{
 	color:lightblue;
 	font-size: 30px;
 	width:235px;
 	height:50px;	
 }
-nav ul li{
+div nav ul li{
 	width:235px;
 	height:50px;
 	background-color:royalblue;
@@ -21,15 +47,81 @@ nav ul li{
 	margin:5px auto;
 	text-align: center;
 	line-height: 50px;
+    display:block;
 }
-nav ul li:hover{
+div nav ul li:hover{
 	display:block;
 	background-color:lightblue;
 	color:royalblue;
 	border-top:royalblue 5px solid;
 	border-bottom:royalblue 5px solid;
 }
-nav ul li:hover a{
+div nav ul li:hover a{
 	display:block;
 	color:royalblue;
+}
+
+div{
+	background-color: rgb(0, 83, 228);
+	width: -webkit-fill-avaliable;
+	height: 1080px;
+	display: block;
+	top:20%;
+}
+div div{
+	position:absolute;
+	width:300px;
+	background-color:white;
+	border-radius: 5px;
+	font-family: 'Inconsolata', monospace;
+	font-family: 'Noto Serif', serif;
+	color:rgb(84, 84, 84);
+	text-align:center;
+	width: 800px;
+	height: 500px; 
+	z-index: 1;
+	top:50%;
+	left:50%;
+	margin-right: -50%;
+	transform: translate(-50%,-50%);
+	box-sizing: border-box;
+}
+h1{
+	font-size: 40px;
+}
+img{
+	width: 600px;
+	height: 300px;
+	border-radius: 3px;
+}
+p{
+	width: 600px;
+}
+
+#next{
+    position:absolute;
+	background-color:yellow;
+	font-family:fantasy;
+    border-radius: 50%;
+    border-style: solid;
+    left:80%;
+    top:93%;
+    width:100px;
+    height:40px;
+    text-align: center;
+    vertical-align: 40px;
+}
+
+#next:hover{
+    background-color:sandybrown;
+	
+}
+
+#resultado{
+    position: absolute;
+    top:10%;
+    left: 50%;
+    width:700px;
+    length:700px;
+    font-size: 150px;
 }
