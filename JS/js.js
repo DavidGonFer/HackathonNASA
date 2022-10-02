@@ -2,9 +2,7 @@
 let numPregunta = 0;
 let numAcertadas = 0;
 let respuestas = ["James Webb", "Hubble", "Spitzer"];
-let respuesta ="";
-function habilitarBoton(){
-    document.getElementById("next").style.visibility="visible";    
+let respuesta ="";  
 let imagenes = ["../../IMG/1aPregunta.jpg","../../IMG/2aPregunta.webp","../../IMG/3aPregunta.jpg"];
 function mostrar(element){
     document.getElementById(element).style.visibility="visible";    
@@ -13,8 +11,6 @@ function mostrar(element){
 function checkear(){
     if(respuestas[numPregunta]==respuesta) numAcertadas++;
     numPregunta++;
-}
-    if(numPregunta>=respuestas.length) mostrarAcertadas();
     if(numPregunta>=respuestas.length) {
         ocultar("esconderResultado");
         mostrar("resultado");
@@ -24,22 +20,34 @@ function checkear(){
     }
     else {
         cambiarImagen();
+        quitarSeleccionado("hubble");
+        quitarSeleccionado("spitzer");
+        quitarSeleccionado("jamesWebb");
         ocultar("next");
     }
 }
 
 function setRespuesta1(){
     mostrar("next");
+    mostrarSeleccionado("jamesWebb");
+    quitarSeleccionado("hubble");
+    quitarSeleccionado("spitzer");
     respuesta = "James Webb";
 }
 
 function setRespuesta2(){
     mostrar("next");
+    mostrarSeleccionado("hubble");
+    quitarSeleccionado("jamesWebb");
+    quitarSeleccionado("spitzer");
     respuesta = "Hubble";
 }
 
 function setRespuesta3(){
     mostrar("next");
+    mostrarSeleccionado("spitzer");
+    quitarSeleccionado("jamesWebb");
+    quitarSeleccionado("hubble");
     respuesta = "Spitzer";
 }
 
@@ -54,6 +62,7 @@ function cambiarImagen(){
 function ocultar(elemento){
     document.getElementById(elemento).style.visibility="hidden";
 }
+
 
 
 
@@ -129,4 +138,11 @@ function comprobarnavegador() {
 		alert("Tu navegador no soporta correctamente las funciones Drag & Drop de HTML5. Prueba con otro navegador.");
 	}
 
+}
+function mostrarSeleccionado(element){
+    document.getElementById(element).style.backgroundColor="rgba(55, 95, 215, 1)";  
+}
+
+function quitarSeleccionado(element){
+    document.getElementById(element).style.backgroundColor="rgba(65, 105, 225, 0.7)";     
 }
