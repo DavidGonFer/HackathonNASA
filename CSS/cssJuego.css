@@ -44,8 +44,8 @@ nav{
 }
 div nav{
     
-    top:85%;
-	left:28%;
+    top:450px;
+	left:36%;
     
 }
 div nav ul li{
@@ -67,7 +67,7 @@ nav ul li{
 	background-color:rgba(65, 105, 225, 0.7);
 	color:lightblue;
 	float:left;
-	margin:20px;
+	margin-left: 85px;
 	text-align: center;
 	line-height: 80px;
     border-radius: 5px;
@@ -108,6 +108,8 @@ div:hover a{
     display: block;
 }
 
+
+
 div{
 	background-color: rgb(0 0 0 / 80%);
 	width: -webkit-fill-avaliable;
@@ -145,16 +147,18 @@ p{
 }
 
 #next{
-    position: relative;
-	background-color:yellow;
+    position: absolute;
+	background-color:rgb(0, 76, 255);
 	font-family:fantasy;
-    border-radius: 50%;
+    border-radius: 30%;
     border-style: solid;
     width:100px;
     height:40px;
     text-align: center;
     line-height: 40px;
     display: block;
+    margin-left: 64%;
+    
     /*visibility: hidden;*/
 }
 
