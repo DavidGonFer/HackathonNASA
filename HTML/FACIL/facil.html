@@ -13,26 +13,33 @@
         <h1>SpaceAppsChallenge</h1> 
     </header>
     <div>
+        <div><img src="../../IMG/1aPregunta.jpg"></div>
+    <div id="esconderResultado">
+        <div ><img id="img" src="../../IMG/1aPregunta.jpg"></div>
+    <div id="resultado">
+        0    
+    </div>
+    <div id="restart">
+        <a href="../menuJuego.html">Volver a jugar</a>
+    </div>
         <div><img src="../../IMG/1aPregunta.jpg">
             <nav>
                 <ul>
-                    <li onclick="check()">
+                    <li onclick="setRespuesta1()">
                         James Webb
                     </li>
-                    <li>
+                    <li onclick="setRespuesta2()">
                         Hubble
                     </li>
-                    <li>
+                    <li onclick="setRespuesta3()">
                         Spitzer
                     </li>
                 </ul>
-                <div id="next" ><a href="facil2.html">Next question</a></div>
+                <div id="next" onclick="checkear()">Next question &#10149;</div>
             </nav>
         </div>
         
         
     </div>
-    
-    
 </body>
 </html>
