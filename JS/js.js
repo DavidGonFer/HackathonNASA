@@ -1,9 +1,9 @@
 
 let numPregunta = 0;
 let numAcertadas = 0;
-let respuestas = ["James Webb", "Hubble", "Spitzer"];
+let respuestas = ["James Webb", "Hubble", "Spitzer","James Webb","Hubble", "Spitzer"];
 let respuesta ="";  
-let imagenes = ["../../IMG/1aPregunta.jpg","../../IMG/2aPregunta.webp","../../IMG/3aPregunta.jpg"];
+let imagenes = ["../../IMG/1aPregunta.jpg","../../IMG/2aPregunta.webp","../../IMG/3aPregunta.jpg","../../IMG/jameswebbMed2.png","../../IMG/hubbleMid1.jpg","../../IMG/spitzerMed1.jpg"];
 function mostrar(element){
     document.getElementById(element).style.visibility="visible";    
 }
@@ -124,7 +124,7 @@ function comprobarPuzzle(){
 		(document.getElementById('pieza3').parentNode.id=='tres') &&
 		(document.getElementById('pieza4').parentNode.id=='cuatro'))
 	{
-		alert('Felicidades, has hecho el puzzle.');
+		alert('AQUI INTRODUCE EL MOSTRAR BOTON Y SIGUIENTE PUZZLE');
 	}
 }
 
