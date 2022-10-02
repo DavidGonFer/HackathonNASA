@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>1 Fácil</title>
+    <title>Normal</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='../../CSS/cssJuego.css'>
     <script src='../../JS/js.js'></script>
@@ -28,14 +28,14 @@
             <img id="imgDif2" src="../../IMG/1aPregunta.jpg">
             <nav id="navDif">
                 <ul>
-                    <li class="liMed" onclick="setRespuesta1()">
+                    <li class="liMed" id="yes" onclick="setRespuestaNormal1()">
                         Yes!
                     </li>
-                    <li class="liMed" onclick="setRespuesta3()">
+                    <li class="liMed" id="no" onclick="setRespuestaNormal2()">
                         No!
                     </li>
                 </ul>
-                <div id="nextM" onclick="checkear()">Next question &#10149;</div>
+                <div id="nextM" onclick="checkearNormal()">Next question &#10149;</div>
             </nav>
         </div>
         

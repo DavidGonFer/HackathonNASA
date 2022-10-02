@@ -1,17 +1,21 @@
 
 let numPregunta = 0;
 let numAcertadas = 0;
-let respuestas = ["James Webb", "Hubble", "Spitzer"];
+let respuestasFacil = ["James Webb", "Hubble", "Spitzer"];
+let respuestasMedio = [""];
+let respuestasDificil=[""];
 let respuesta ="";  
-let imagenes = ["../../IMG/1aPregunta.jpg","../../IMG/2aPregunta.webp","../../IMG/3aPregunta.jpg"];
+let imagenesFacil = ["../../IMG/1aPregunta.jpg","../../IMG/2aPregunta.webp","../../IMG/3aPregunta.jpg"];
+let imagenesNormal = [["",""],];
+let imagenesDificil = [["","","",""],];
 function mostrar(element){
     document.getElementById(element).style.visibility="visible";    
 }
 
-function checkear(){
-    if(respuestas[numPregunta]==respuesta) numAcertadas++;
+function checkearFacil(){
+    if(respuestasFacil[numPregunta]==respuesta) numAcertadas++;
     numPregunta++;
-    if(numPregunta>=respuestas.length) {
+    if(numPregunta>=respuestasFacil.length) {
         ocultar("esconderResultado");
         ocultar("next");
         mostrar("resultado");
@@ -28,7 +32,26 @@ function checkear(){
     }
 }
 
-function setRespuesta1(){
+function checkearNormal(){
+    if(respuestasMedio[numPregunta]==respuesta) numAcertadas++;
+    numPregunta++;
+    if(numPregunta>=respuestasMedio.length) {
+        ocultar("esconderResultado");
+        ocultar("nextM");
+        mostrar("resultado");
+        mostrar("restart");
+        mostrarAcertadas();
+        
+    }
+    else {
+        cambiarImagenesNormal();
+        quitarSeleccionado("yes");
+        quitarSeleccionado("no");
+        ocultar("nextM");
+    }
+}
+
+function setRespuestaFacil1(){
     mostrar("next");
     mostrarSeleccionado("jamesWebb");
     quitarSeleccionado("hubble");
@@ -36,7 +59,7 @@ function setRespuesta1(){
     respuesta = "James Webb";
 }
 
-function setRespuesta2(){
+function setRespuestaFacil2(){
     mostrar("next");
     mostrarSeleccionado("hubble");
     quitarSeleccionado("jamesWebb");
@@ -44,7 +67,7 @@ function setRespuesta2(){
     respuesta = "Hubble";
 }
 
-function setRespuesta3(){
+function setRespuestaFacil3(){
     mostrar("next");
     mostrarSeleccionado("spitzer");
     quitarSeleccionado("jamesWebb");
@@ -52,12 +75,36 @@ function setRespuesta3(){
     respuesta = "Spitzer";
 }
 
+function setRespuestaNormal1(){
+    mostrar("nextM");
+    mostrarSeleccionado("yes");
+    quitarSeleccionado("no");
+}
+
+function setRespuestaNormal2(){
+    mostrar("nextM");
+    quitarSeleccionado("yes");
+    mostrarSeleccionado("no");   
+}
+
 function mostrarAcertadas(){
     document.getElementById("resultado").innerHTML = numAcertadas;
 }
 
 function cambiarImagen(){
-    document.getElementById("img").src=imagenes[numPregunta];
+    document.getElementById("img").src=imagenesFacil[numPregunta];
+}
+
+function cambiarImagenesNormal(){
+    document.getElementById("imgDif1").src=imagenesNormal[numPregunta][0];   
+    document.getElementById("imgDif2").src=imagenesNormal[numPregunta][1];   
+
+}
+
+function cambiarImagenesDificil(){
+    document.getElementById("imgDif1").src=imagenesNormal[numPregunta][0];   
+    document.getElementById("imgDif2").src=imagenesNormal[numPregunta][1];   
+
 }
 
 function ocultar(elemento){

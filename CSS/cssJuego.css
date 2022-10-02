@@ -261,7 +261,7 @@ div#restart:hover a{
     display: block;
     font-size: 12px;
     margin-left: 64%;
-    /*visibility: hidden;*/
+    visibility: hidden;
 }
 
 #nextM:hover{
