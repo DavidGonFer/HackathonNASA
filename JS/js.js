@@ -1,9 +1,8 @@
 
 let numPregunta = 0;
 let numAcertadas = 0;
-let respuestasFacil = ["James Webb", "Hubble", "Spitzer"];
-let respuestasMedio = [""];
-let respuestasDificil=[""];
+let respuestas = ["James Webb", "Hubble", "Spitzer","James Webb","Hubble", "Spitzer"];
+let respuestasMedio = [];
 let respuesta;  
 let imagenesFacil = ["../../IMG/1aPregunta.jpg","../../IMG/2aPregunta.webp","../../IMG/3aPregunta.jpg"];
 let imagenesNormal = [["../../IMG/",""],];
