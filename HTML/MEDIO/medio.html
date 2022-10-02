@@ -22,20 +22,20 @@
     <div id="restart">
         <a href="../menuJuego.html">Volver a jugar</a>
     </div>
-        <div><img src="../../IMG/1aPregunta.jpg">
-            <nav>
+        <div>
+            <h2>Has the same telescope took this 2 photos?</h2>
+            <img id="imgDif1" src="../../IMG/1aPregunta.jpg">
+            <img id="imgDif2" src="../../IMG/1aPregunta.jpg">
+            <nav id="navDif">
                 <ul>
-                    <li onclick="setRespuesta1()">
-                        James Webb
+                    <li class="liMed" onclick="setRespuesta1()">
+                        Yes!
                     </li>
-                    <li onclick="setRespuesta2()">
-                        Hubble
-                    </li>
-                    <li onclick="setRespuesta3()">
-                        Spitzer
+                    <li class="liMed" onclick="setRespuesta3()">
+                        No!
                     </li>
                 </ul>
-                <div id="next" onclick="checkear()">Next question &#10149;</div>
+                <div id="nextM" onclick="checkear()">Next question &#10149;</div>
             </nav>
         </div>
         

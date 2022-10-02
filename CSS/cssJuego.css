@@ -34,6 +34,9 @@ div{
     border-radius: 5px;
     
 }
+h2{
+    margin-bottom: -10px;
+}
 nav{
 	position:absolute;
 	top:50%;
@@ -236,4 +239,61 @@ div#restart:hover{
 }
 div#restart:hover a{
     color: yellow;
+}
+
+
+
+
+
+
+
+
+#nextM{
+    position: absolute;
+	background-color:rgb(211, 211, 211);
+	font-family:fantasy;
+    border-radius: 5px;
+    border-style: solid;
+    width:100px;
+    height:40px;
+    text-align: center;
+    line-height: 40px;
+    display: block;
+    font-size: 12px;
+    margin-left: 64%;
+    /*visibility: hidden;*/
+}
+
+#nextM:hover{
+    background-color:sandybrown;
+    display: block;
+	
+}
+
+#nextM:hover a{
+    color:antiquewhite;
+    display: block;
+	
+}
+
+#nextM a{
+    display: block;
+	color: rgb(255, 255, 255);
+    font-weight:lighter;
+}
+
+#imgDif1{
+    margin-top: 100px;
+    width: 40%;
+    height: 40%;
+    
+}
+
+#imgDif2{
+    margin-top: 100px;
+    width: 40%;
+    height: 40%;
+}
+.liMed{
+    margin-left: 200px;
 }
