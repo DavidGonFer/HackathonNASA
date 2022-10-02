@@ -360,7 +360,7 @@ div#restart:hover a{
     font-size: 12px;
     margin-left: 47%;
     top: 52%;
-    /*visibility: hidden;*/
+    visibility: hidden;
 }
 
 #nextD:hover{

@@ -11,6 +11,11 @@ function mostrar(element){
     document.getElementById(element).style.visibility="visible";    
 }
 
+function checkearDificil(){
+    ocultar("nextD");
+
+}
+
 function checkearFacil(){
     if(respuestasFacil[numPregunta]==respuesta) numAcertadas++;
     numPregunta++;
@@ -174,7 +179,8 @@ function comprobarPuzzle(){
 		(document.getElementById('pieza3').parentNode.id=='tres') &&
 		(document.getElementById('pieza4').parentNode.id=='cuatro'))
 	{
-		cambiarImagenesDificil();
+		mostrar("nextD");
+        
 	}
 }
 
