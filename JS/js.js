@@ -53,7 +53,7 @@ function setRespuesta3(){
 }
 
 function mostrarAcertadas(){
-    document.getElementById("resultado").innerHTML = numAcertadas;
+    document.getElementById("resultado").innerHTML ="You have: "+ numAcertadas+" correct answers!";
 }
 
 function cambiarImagen(){
