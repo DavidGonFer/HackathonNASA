@@ -13,6 +13,7 @@ function checkear(){
     numPregunta++;
     if(numPregunta>=respuestas.length) {
         ocultar("esconderResultado");
+        ocultar("next");
         mostrar("resultado");
         mostrar("restart");
         mostrarAcertadas();
