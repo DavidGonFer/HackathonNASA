@@ -5,8 +5,8 @@ let respuestasFacil = ["James Webb", "Hubble", "Spitzer","James Webb","Hubble", 
 let respuestasMedio = [true,false,true,true,false];
 let respuesta;  
 let imagenesFacil = ["../../IMG/1aPregunta.jpg","../../IMG/2aPregunta.webp","../../IMG/3aPregunta.jpg","../../IMG/jameswebbMed2.png","../../IMG/hubbleMid1.jpg","../../IMG/spitzerMed1.jpg"];
-let imagenesNormal = [["../../IMG/james webb.png","../../IMG/jameswebbMed1.jpg"],["../../IMG/nebulosa orion.jpg","../../IMG/jameswebbMed1.jpg"],["../../IMG/spitzerMed1.jpg","../../IMG/spitzerMed2.jpg"],["../../IMG/spitzer.jpg","../../IMG/spitzerMed2.jpg"],["../../IMG/spitzer.jpg","../../IMG/hubbleMid1.jpg"]];
-let imagenesDificil = [["../../IMG/1a-1","../../IMG/2a-1","../../IMG/1b-1","../../IMG/2b-1"],["../../IMG/1a-2","../../IMG/2a-2","../../IMG/1b-2","../../IMG/2b-2"]];
+let imagenesNormal = [["../../IMG/james webb.png","../../IMG/jameswebbMed1.jpg"],["../../IMG/hubbleMid2.png","../../IMG/jameswebbMed1.jpg"],["../../IMG/spitzerMed1.jpg","../../IMG/spitzerMed2.jpg"],["../../IMG/spitzer.jpg","../../IMG/spitzerMed2.jpg"],["../../IMG/spitzer.jpg","../../IMG/hubbleMid1.jpg"]];
+let imagenesDificil = [["../../IMG/2a-2.png","../../IMG/1a-2.png","../../IMG/2b-2.png","../../IMG/1b-2.png"]];
 function mostrar(element){
     document.getElementById(element).style.visibility="visible";    
 }
@@ -174,7 +174,7 @@ function comprobarPuzzle(){
 		(document.getElementById('pieza3').parentNode.id=='tres') &&
 		(document.getElementById('pieza4').parentNode.id=='cuatro'))
 	{
-		alert('Felicidades, has hecho el puzzle.');
+		cambiarImagenesDificil();
 	}
 }
 
