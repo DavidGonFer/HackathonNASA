@@ -4,10 +4,10 @@ let numAcertadas = 0;
 let respuestasFacil = ["James Webb", "Hubble", "Spitzer"];
 let respuestasMedio = [""];
 let respuestasDificil=[""];
-let respuesta ="";  
+let respuesta;  
 let imagenesFacil = ["../../IMG/1aPregunta.jpg","../../IMG/2aPregunta.webp","../../IMG/3aPregunta.jpg"];
-let imagenesNormal = [["",""],];
-let imagenesDificil = [["","","",""],];
+let imagenesNormal = [["../../IMG/",""],];
+let imagenesDificil = [["../../IMG/1a-1","../../IMG/2a-1","../../IMG/1b-1","../../IMG/2b-1"],["../../IMG/1a-2","../../IMG/2a-2","../../IMG/1b-2","../../IMG/2b-2"]];
 function mostrar(element){
     document.getElementById(element).style.visibility="visible";    
 }
@@ -79,12 +79,14 @@ function setRespuestaNormal1(){
     mostrar("nextM");
     mostrarSeleccionado("yes");
     quitarSeleccionado("no");
+    respuesta=true;
 }
 
 function setRespuestaNormal2(){
     mostrar("nextM");
     quitarSeleccionado("yes");
     mostrarSeleccionado("no");   
+    respuesta=true;
 }
 
 function mostrarAcertadas(){
@@ -102,8 +104,10 @@ function cambiarImagenesNormal(){
 }
 
 function cambiarImagenesDificil(){
-    document.getElementById("imgDif1").src=imagenesNormal[numPregunta][0];   
-    document.getElementById("imgDif2").src=imagenesNormal[numPregunta][1];   
+    document.getElementById("pieza3").src=imagenesDificil[numPregunta][0];   
+    document.getElementById("pieza2").src=imagenesDificil[numPregunta][1]; 
+    document.getElementById("pieza4").src=imagenesDificil[numPregunta][2];   
+    document.getElementById("pieza1").src=imagenesDificil[numPregunta][3];   
 
 }
 
