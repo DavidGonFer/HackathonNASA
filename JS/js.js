@@ -2,9 +2,7 @@
 let numPregunta = 0;
 let numAcertadas = 0;
 let respuestas = ["James Webb", "Hubble", "Spitzer"];
-let respuesta ="";
-function habilitarBoton(){
-    document.getElementById("next").style.visibility="visible";    
+let respuesta ="";  
 let imagenes = ["../../IMG/1aPregunta.jpg","../../IMG/2aPregunta.webp","../../IMG/3aPregunta.jpg"];
 function mostrar(element){
     document.getElementById(element).style.visibility="visible";    
@@ -13,8 +11,6 @@ function mostrar(element){
 function checkear(){
     if(respuestas[numPregunta]==respuesta) numAcertadas++;
     numPregunta++;
-}
-    if(numPregunta>=respuestas.length) mostrarAcertadas();
     if(numPregunta>=respuestas.length) {
         ocultar("esconderResultado");
         mostrar("resultado");
