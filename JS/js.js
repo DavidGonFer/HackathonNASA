@@ -47,6 +47,9 @@ function mostrarAcertadas(){
     document.getElementById("resultado").innerHTML = numAcertadas;
 }
 
+function cambiarImagen(){
+    document.getElementById("img").src=imagenes[numPregunta];
+}
 
 function ocultar(elemento){
     document.getElementById(elemento).style.visibility="hidden";
