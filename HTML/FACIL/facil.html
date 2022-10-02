@@ -6,7 +6,6 @@
     <title>1 Fácil</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='../../CSS/cssJuego.css'>
-    <script src='../../JS/js.js'></script>
 </head>
 <body>
     <header>
@@ -14,6 +13,8 @@
     </header>
     <div>
         <div><img src="../../IMG/1aPregunta.jpg"></div>
+    <div id="esconderResultado">
+        <div ><img id="img" src="../../IMG/1aPregunta.jpg"></div>
         <br>
         <nav>
 			<ul>
@@ -30,6 +31,12 @@
 		</nav>
     </div>
     <div id="next" ><a href="facil2.html">Next question</a></div>
-    
+    <div id="next" onclick="checkear()"><a id="enlace" href="#">Next question</a></div>
+    <div id="resultado">
+        0    
+    </div>
+    <div id="restart">
+        <a href="../menuJuego.html">Volver a jugar</a>
+    </div>
 </body>
 </html>

@@ -179,7 +179,10 @@ li#dificil:hover{
     
 }
 
+
+
 div#resultado{
+    visibility: hidden;
     position: absolute;
     top:10%;
     left: 27%;
@@ -192,6 +195,7 @@ div#resultado{
 }
 
 div#restart{
+    visibility: hidden;
     position: absolute;
     color:lightblue;
     background-image: url("../IMG/fondo.jpg");
