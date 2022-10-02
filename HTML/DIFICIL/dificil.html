@@ -12,30 +12,31 @@
     <header>
         <h1>SpaceApps Quiz!</h1> 
     </header>
-    <div>
-        <div id="resultado">
-            0    
+    <div id="resultado">
+        0    
+    </div>
+    <div id="restart">
+        <a href="../menuJuego.html">Volver a jugar</a>
+    </div>
+    <section id="contenedorPuzzle">
+        
+        <div id="contenedorPiezas" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)">
+            <img id="pieza3" src="../../IMG/2a-1.png" alt="pieza3" draggable="true" ondragstart="start(event)" ondragend="end(event)">
+            <img id="pieza2" src="../../IMG/1a-1.png" alt="pieza2" draggable="true" ondragstart="start(event)" ondragend="end(event)">
+            <img id="pieza4" src="../../IMG/2b-1.png" alt="pieza4" draggable="true" ondragstart="start(event)" ondragend="end(event)">
+            <img id="pieza1" src="../../IMG/1b-1.png" alt="pieza1" draggable="true" ondragstart="start(event)" ondragend="end(event)">
         </div>
-        <div id="restart">
-            <a href="../menuJuego.html">Volver a jugar</a>
-        </div>
-        <div id="esconderResultado">
-        <div><img src="../../IMG/1aPregunta.jpg">
-            <nav>
-                <ul>
-                    <li  onclick="setRespuesta1()">
-                        James Webb
-                    </li>
-                    <li onclick="setRespuesta2()">
-                        Hubble
-                    </li>
-                    <li onclick="setRespuesta3()">
-                        Spitzer
-                    </li>
-                </ul>
-                <div id="next" onclick="checkear()">Next question &#10149;</div>
-            </nav>
-        </div>
+        <section id="puzzle">
+            <div class="contenedorPieza" id="uno" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"></div>
+            <div class="contenedorPieza" id="dos" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"></div>
+            <div class="contenedorPieza" id="tres" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"></div>
+            <div class="contenedorPieza" id="cuatro" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"></div>
+        </section>	
+    </section>
+    <div id="nextD" onclick="checkear()">Next question &#10149;</div>
+                
+            
+        
         
         
     </div>
